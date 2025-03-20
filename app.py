@@ -6,11 +6,10 @@ from functions import *
 
 st.title("♟️Шахматный анализатор by Singularity Hub")
 mode = st.radio("Выберите способ загрузки:", ["PGN-файл", "FEN-ввод"])
-depth = st.slider("Выберите глубину анализа (чем выше, тем точнее)", min_value=5, max_value=30, value=15)
 
 stockfish_path = "C:/Users/Stankov.N/Downloads/stockfish/stockfish.exe"
 stockfish = Stockfish(path=stockfish_path)
-stockfish.set_depth(depth)
+stockfish.set_depth(17)
 
 #PGN-файл
 if mode == "PGN-файл":
