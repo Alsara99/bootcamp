@@ -7,7 +7,7 @@ from functions import *
 st.title("♟️Шахматный анализатор by Singularity Hub")
 mode = st.radio("Выберите способ загрузки:", ["PGN-файл", "FEN-ввод"])
 
-stockfish_path = "C:/Users/Stankov.N/Downloads/stockfish/stockfish.exe"
+stockfish_path = "stockfish/stockfish.exe"
 stockfish = Stockfish(path=stockfish_path)
 stockfish.set_depth(17)
 
